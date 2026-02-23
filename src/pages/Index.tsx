@@ -1,13 +1,21 @@
 import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import headshot from "@/assets/headshot.jpg";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <main className="max-w-2xl mx-auto px-6 py-16 md:py-24">
-        {/* Name */}
-        <h1 className="font-heading text-3xl md:text-4xl font-black tracking-wide uppercase mb-8 text-foreground">
-          ABDELLAH RECHAM
-        </h1>
+        {/* Header with photo */}
+        <div className="flex items-center gap-6 mb-8">
+          <img
+            src={headshot}
+            alt="Abdellah Recham"
+            className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover shrink-0"
+          />
+          <h1 className="font-heading text-3xl md:text-4xl font-black tracking-wide uppercase text-foreground">
+            ABDELLAH RECHAM
+          </h1>
+        </div>
 
         {/* Intro pitch */}
         <p className="text-lg leading-relaxed mb-6 text-foreground">
